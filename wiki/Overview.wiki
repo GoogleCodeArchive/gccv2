@@ -110,22 +110,14 @@ Options must be selected before the log is activated, otherwise the controls are
 
 - Exclude stop time : if activate, the points with zero speed are removed from
 
-  "trip time" and "average speed" calculations. This is useful to see the "net time"
+  "trip time" and "average speed" calculations. This is useful to see the File/Export" to load an existing file. 
 
-  when you e.g. cycling and make breaks during the trip, without the need to switch off the logger.
 
- 
-
-- Stop GPS if battery < 20% : as a safety feature, to avoid completely draining
-
-  the battery.
-----
-
-== Loading the *.gcc files back for viewing ==
+"Units" and "Exclude stop time" can be changed, display will be automatically updated.ewing ==
 
 Click "Load .gcc" to load an existing file. You see the file name on a red background
 
-on the top of the main tab, to warn you that this is a file data, not a current log.
+on the top of the main tab, to warn you that this is a file data, not a current g.
 
  
 
@@ -133,15 +125,15 @@ on the top of the main tab, to warn you that this is a file data, not a current 
 
  
 
-Click "Save .kml" - to save into KML the currently loaded file or the current
-
-log (after you pressed Stop). The .kml file has the same name as the corresponding gcc file.
+Click "Save .kml" - to save into KML the currently loaded file or the currelog (after you pressed Stop). The .kml file has the same name as the corresponding gcc file.
 
  
 
 Click "Save .gpx" - to save into GPX the currently loaded file or the current
 
-log (after you pressed Stop). The .gpx file has the same name as the corresponding gcc file.
+log (after you pressed Stop). The .gpx file has the sTrack to Follow ==
+
+You can load a .gpx .kml or .gcc file as "Track2Follow". Then tis track is displayed on map in different color and you can follow it. A navigation arrow and navigation commands in text and voice guides you along the route loades as Track2Followe has the same name as the corresponding gcc file.
 
  
 
@@ -161,21 +153,14 @@ to edit .jpeg files which are supplied with the source code (look into GpsCycleC
 
 and copy the new images into the folder with GpsCycleComputer.exe on your
 
-WinMobile, then re-start GpsCycleComputer.  The new images will be loaded at the startup.
+WinMobile, then re-start GpsCyclmenu, edit files “graph.jpg” (normal)
 
-If you want to change just a single button, just copy the files for that button, all files are not required.
-
- 
-
-For example, if you want the change “Graph” button for bottom menu, edit files “btm_graph_normal.jpg”
-
-and “btm_graph_pressed.jpg”  (there are two images, as button has two states). Note you must
-
-not change the image sizes!
+and “ want to change just a single button, just copy the files for that button, all files are not required.
 
  
 
-To change the background color, edit file “bk_color.jpg”. The image shall be filled with a single color. For
+For example, if he background color and foreground color (text color) can be changed in Options - Main screen - Select fore/back/mapLabel-color. 
+e background color, edit file “bk_color.jpg”. The image shall be filled with a single color. For
 
 the font (fore) color, edit fore_color.jpg (and place then with GpsCycleComputer.exe).
 ----
@@ -186,14 +171,19 @@ A complete source code (in C#) is provided. For GCC file format see file Form1.c
 
 "buttonLoad_Click" which loads a gcc file. Basically after a header with general data,
 
-the data is written as 5 short int (short int = 16 bits = 2 bytes) which are :
-
-x, y, z (in metres, relative to starting point), speed (in kmh*10) and time (sec, relative
-
-to start). Also there are a few special records (also as 5 short ints) to save some
+the data is written as 5 short int (short int = 16 bits = 2tore some
 
 control info, like battery status.
-
  
 
 Feel free to change anything you like, but please send me you comments/bug fixes.
+----
+
+== Documentation and Support ==
+Documentation is here:
+http://gccv2.googlecode.com/files/Readme.htm
+
+Support is provided in the project Forum:
+http://forum.xda-developers.com/showthread.php?t=424423
+
+
